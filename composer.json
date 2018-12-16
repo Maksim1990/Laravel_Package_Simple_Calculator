@@ -1,0 +1,24 @@
+{
+    "name": "maksim_n/calculator",
+    "description": "Useful calculator package",
+    "authors": [
+        {
+            "name": "Maksim Narushevich",
+            "email": "narushevich.maksim@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Maksim_N\\Calculator\\CalculatorServiceProvider"
+            ]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Maksim_N\\Calculator\\": "/src"
+        }
+    },
+    "require": {}
+}
