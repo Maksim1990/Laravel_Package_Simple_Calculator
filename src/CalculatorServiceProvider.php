@@ -16,7 +16,7 @@ class CalculatorServiceProvider extends ServiceProvider
         include __DIR__.'/routes.php';
         $this->publishes([
             // Config
-            __DIR__.'/../config/maksim_n_calc.php' => config_path('calculator.php'),
+            __DIR__."/config/maksim_n_calc.php" => config_path("calculator.php"),
 
         ], 'maksim_n_calc');
     }
