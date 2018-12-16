@@ -14,6 +14,11 @@ class CalculatorServiceProvider extends ServiceProvider
     public function boot()
     {
         include __DIR__.'/routes.php';
+        $this->publishes([
+            // Config
+            __DIR__.'/../config/maksim_n_calc.php' => config_path('maksim_n_calc.php'),
+
+        ], 'maksim_n_calc');
     }
 
     /**
